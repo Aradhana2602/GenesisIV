@@ -11,8 +11,13 @@ const Home = () => {
       <div className="genesis">
         <img src={genesis} alt="" />
         <img src={IV} alt="" />
-
       </div>
+      <div className="register">
+        <button>Register</button>
+       
+      </div>
+      
+        
       
     </div>
   );

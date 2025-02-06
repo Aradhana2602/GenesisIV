@@ -8,5 +8,36 @@
 .genesis{
   display: flex;
   justify-content: center;
-  
+
 }
+.register{
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  height: 4rem;
+  width: 10rem;
+  background: linear-gradient(135deg, #000346, #8e9998); /* Gradient background */
+  border: none;
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  border-radius: 0.2rem;
+  cursor: pointer;
+  transition: all 0.3s ease; 
+  outline: none;
+  margin-top: 20px;
+}
+
+button:hover {
+  background: linear-gradient(135deg, #DC2626, #783232);
+  transform: scale(1.05); /* Slight pop effect */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+button:active {
+  transform: scale(2.98);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+

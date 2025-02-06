@@ -1,11 +1,21 @@
-import React from 'react'
+import React from "react";
+import genesis from "../assets/genesis.svg";
+import IV from "../assets/iv.svg";
+import Navbar from '../components/navbar';
+import "./home.css";
 
-const home = () => {
+const Home = () => {
   return (
-    <div>
+    <div className="home">
+      <Navbar/>
+      <div className="genesis">
+        <img src={genesis} alt="" />
+        <img src={IV} alt="" />
+
+      </div>
       
     </div>
-  )
-}
+  );
+};
 
-export default home
+export default Home;

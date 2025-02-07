@@ -1,4 +1,6 @@
 .timer{
+    font-size: 3rem;
+    color: white;
     display: flex;
     justify-items: center;
     align-items: center;

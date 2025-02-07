@@ -20,13 +20,13 @@ function Timer() {
     if (total >= 0) {
       setTimer(
         (days > 9 ? days : "0" + days) +
-          "d : " +
+          "D : " +
           (hours > 9 ? hours : "0" + hours) +
-          "h : " +
+          "H : " +
           (minutes > 9 ? minutes : "0" + minutes) +
-          "m : " +
+          "M : " +
           (seconds > 9 ? seconds : "0" + seconds) +
-          "s"
+          "S"
       );
     }
   }

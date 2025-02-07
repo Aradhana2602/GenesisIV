@@ -1,0 +1,35 @@
+.sponsors {
+    background-image: url('../assets/Hallway.svg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.sponsors h1 {
+    font-size: 4rem;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.sponsors h1:hover {
+    color: #df1f1f; 
+    transform: scale(1.1);
+}
+
+
+.sections h2 {
+    font-size: 1.8rem;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.sections h2:hover {
+    color: #ff5733;
+    transform: translateX(10px); 
+}
+
+

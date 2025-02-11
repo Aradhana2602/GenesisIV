@@ -1,16 +1,33 @@
 .home {
-  background-image: url('../assets/home-bg.svg'); /* Use relative path if using CSS */
+  background-image: url('../assets/homebg.svg');
   background-size: cover;
   background-position: center;
   height: 100vh;
   width: 100%;
 }
-.genesis{
-  display: flex;
-  justify-content: center;
 
+.align{
+  display: flex;
 }
+.genesis {
+  height:35rem;
+  margin-top: -1rem;
+  margin-left: 12rem;
+}
+.genesis img {
+  height: 30rem; /* Maintain aspect ratio */
+  max-width: 100%; /* Ensure responsiveness */
+}
+
+.bg img {
+  height: 40rem;
+  max-width: 100%;
+  opacity: 0.3r;
+  margin-right: 25rem;
+}
+
 .register{
+  margin-top: -10rem;
   display: flex;
   flex-direction: column;
   align-items: center;

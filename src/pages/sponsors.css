@@ -1,10 +1,10 @@
 .sponsors {
-    background-image: url('../assets/Hallway.svg');
+    background-color: #FBF2EB;
     background-size: cover;
     background-position: center;
     height: 100vh;
     width: 100%;
-    color: white;
+    color: rgb(0, 0, 0);
     display: flex;
     align-items: center;
     flex-direction: column;

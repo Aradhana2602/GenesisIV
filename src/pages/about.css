@@ -7,7 +7,7 @@
     background-image: url('../assets/Aboutbg.svg');
     background-size: cover;
     background-position: center;
-    height: 142.5vh;
+    height: 142.vh;
     width: 100%;
     color: rgb(204, 193, 193);
     display: flex;
@@ -26,4 +26,35 @@
     color: red;
     font-size: 1.5rem;
      
+}
+
+@media screen and (max-width: 1000px) and (min-width: 701px) {
+    .about-para {
+        font-size: 1.3rem;
+    }
+}
+
+/* ❌ Hide image & adjust text for screens below 700px */
+@media screen and (max-width: 700px) {
+    .about-img {
+        display: none;
+    }
+
+    .about-para {
+        font-size: 1.2rem;
+        margin-top: 5rem;
+        padding: 1rem 1rem;
+    }
+}
+
+/* 📱 Extra small screens (below 456px) */
+@media screen and (max-width: 456px) {
+    .para {
+        padding-right: 1rem;
+    }
+
+    .about-para {
+        font-size: 1rem;
+        max-width: 95%;
+    }
 }

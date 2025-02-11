@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircleDown, faCircleUp } from "@fortawesome/free-solid-svg-icons";
 import { motion } from "framer-motion";
-import "./Faqs.css"; // Import the separate CSS file
+import "./faqs.css"; // Import the separate CSS file
 
 export default function Faqs() {
   const [isOpen, setIsOpen] = useState(false);

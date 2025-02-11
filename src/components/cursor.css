@@ -1,0 +1,19 @@
+
+* {
+    cursor: default;
+}
+
+
+.custom-cursor {
+    position: fixed;
+    width: 20rem;
+    height: 20rem;
+    background: radial-gradient(circle, rgba(14, 186, 220, 0.7) 2%, rgba(224, 16, 16, 0) 70%);
+    border-radius: 50%;
+    pointer-events: none; /* Prevents interference with clicks */
+    transform: translate(-50%, -50%);
+    mix-blend-mode: difference; /* Creates a dark glow effect */
+    z-index: 9999;
+    transition: transform 0.1s linear;
+    pointer-events: none; /* Ensure it does not block interactions */
+}

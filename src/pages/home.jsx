@@ -1,6 +1,5 @@
 import React from "react";
 import genesis from "../assets/genesis.svg";
-import homebg from "../assets/homebg.svg";
 import Navbar from '../components/navbar';
 import Timer from '../components/timer';
 import "./home.css";

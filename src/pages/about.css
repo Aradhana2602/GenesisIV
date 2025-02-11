@@ -17,6 +17,7 @@
 .about-img img{
     margin-top: 10rem;
     height: 55rem;
+  
 }
 
 .about-para{
@@ -50,7 +51,7 @@
 /* 📱 Extra small screens (below 456px) */
 @media screen and (max-width: 456px) {
     .para {
-        padding-right: 1rem;
+        padding-right: 1.2rem;
     }
 
     .about-para {

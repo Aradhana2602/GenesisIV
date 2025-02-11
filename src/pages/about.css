@@ -1,27 +1,29 @@
-@font-face {
-    font-family: 'TheEvilWithin';
-    src: url('/assets/fonts/TheEvilWithin.ttf') format('truetype'); /* Absolute path */
-    font-weight: normal;
-    font-style: normal;
-}
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100..700&display=swap');
+
+
 
 
 .para{
     background-image: url('../assets/Aboutbg.svg');
     background-size: cover;
     background-position: center;
-    height: 150vh;
+    height: 142.5vh;
     width: 100%;
     color: rgb(204, 193, 193);
     display: flex;
     
+    
 }
 .about-img img{
-    height: 60rem;
+    margin-top: 10rem;
+    height: 55rem;
 }
 
 .about-para{
-    font-family: 'TheEvilWithin', sans-serif;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 500;
+    margin-top: 15rem;
     color: red;
+    font-size: 1.5rem;
      
 }

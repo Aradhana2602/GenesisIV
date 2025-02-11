@@ -1,5 +1,5 @@
 import React from "react";
-import "./Memories.css";
+import "./memories.css";
 import Full from "../assets/full.svg";
 
 export default function Memories() {

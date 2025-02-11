@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 import "./timer.css";
 
 function Timer() {
-  const [timer, setTimer] = useState("00:00:00:00");
+  const [timer, setTimer] = useState({ days: "00", hours: "00", minutes: "00", seconds: "00" });
   const Ref = useRef(null);
 
   function getTimeRemaining(endTime) {
@@ -18,16 +18,12 @@ function Timer() {
   function startTimer(endTime) {
     let { total, days, hours, minutes, seconds } = getTimeRemaining(endTime);
     if (total >= 0) {
-      setTimer(
-        (days > 9 ? days : "0" + days) +
-          "D : " +
-          (hours > 9 ? hours : "0" + hours) +
-          "H : " +
-          (minutes > 9 ? minutes : "0" + minutes) +
-          "M : " +
-          (seconds > 9 ? seconds : "0" + seconds) +
-          "S"
-      );
+      setTimer({
+        days: days > 9 ? days : "0" + days,
+        hours: hours > 9 ? hours : "0" + hours,
+        minutes: minutes > 9 ? minutes : "0" + minutes,
+        seconds: seconds > 9 ? seconds : "0" + seconds,
+      });
     }
   }
 
@@ -47,12 +43,30 @@ function Timer() {
 
   useEffect(() => {
     clearTimer(getDeadTime());
-    return () => clearInterval(Ref.current); // Cleanup on unmount
+    return () => clearInterval(Ref.current);
   }, []);
 
   return (
     <div className="timer">
-      <h3>{timer}</h3>
+      <div className="time-box">
+        <span className="time-segment">{timer.days}D</span>
+        
+      </div>
+      <span className="separator">:</span>
+      <div className="time-box">
+        <span className="time-segment">{timer.hours}H</span>
+       
+      </div>
+      <span className="separator">:</span>
+      <div className="time-box">
+        <span className="time-segment">{timer.minutes}M</span>
+        
+      </div>
+      <span className="separator">:</span>
+      <div className="time-box">
+        <span className="time-segment">{timer.seconds}S</span>
+        
+      </div>
     </div>
   );
 }

@@ -1,8 +1,27 @@
+@font-face {
+    font-family: 'TheEvilWithin';
+    src: url('/assets/fonts/TheEvilWithin.ttf') format('truetype'); /* Absolute path */
+    font-weight: normal;
+    font-style: normal;
+}
+
+
 .para{
-    background-image: url('../assets/About-bg.svg');
+    background-image: url('../assets/Aboutbg.svg');
     background-size: cover;
     background-position: center;
-    height: 100vh;
+    height: 150vh;
     width: 100%;
-    color: white;
+    color: rgb(204, 193, 193);
+    display: flex;
+    
+}
+.about-img img{
+    height: 60rem;
+}
+
+.about-para{
+    font-family: 'TheEvilWithin', sans-serif;
+    color: red;
+     
 }

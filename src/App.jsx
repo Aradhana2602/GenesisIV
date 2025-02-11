@@ -7,10 +7,11 @@ import About from './pages/about';
 function App() {
   return (
     <>
-      
-      <Home />
-      <About />
-      <Sponsors />
+      <div className="main">
+        <Home />
+        <About />
+        <Sponsors />
+      </div>
     </>
   );
 }

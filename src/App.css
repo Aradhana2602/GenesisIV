@@ -1,0 +1,9 @@
+.main{
+    background-color: #FBF2EB;
+}
+@font-face {
+    font-family: 'TheEvilWithin';
+    src: url('../assets/fonts/TheEvilWithin.ttf') format('truetype'); /* Adjust path if needed */
+    font-weight: normal;
+    font-style: normal;
+}

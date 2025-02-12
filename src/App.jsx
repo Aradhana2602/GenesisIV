@@ -6,15 +6,18 @@ import About from './pages/about';
 import Faqs from './pages/faqs';
 import Footer from './components/footer'
 import Memories from './pages/memories';
+import Prize from './pages/prize';
 
 function App() {
   return (
     <>
       <div className="main">
-        <Home />
+        <Home/>
         <About />
+        <Prize/>
         <Sponsors />
         <Memories/>
+       
         <Faqs/>
         <Footer/>
       </div>

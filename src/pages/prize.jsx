@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import Prizebg from "../assets/prizebg.svg";
 import Gdxr from "../assets/gdxr.svg";
 import Zombie from "../assets/zombie.svg";
@@ -11,24 +11,6 @@ const prizeData = [
 ];
 
 const Prize = () => {
-  useEffect(() => {
-    const numDots = 30; // Number of floating dots
-    const container = document.querySelector('.zombie-container');
-
-    for (let i = 0; i < numDots; i++) {
-      let dot = document.createElement('div');
-      dot.className = 'floating-dot';
-
-      // Randomize position around zombie
-      dot.style.left = `${40 + Math.random() * 20}%`; // Constrain to zombie area
-      dot.style.top = `${50 + Math.random() * 20}%`;
-      dot.style.animationDuration = `${2 + Math.random() * 3}s`; // Random speed
-      dot.style.width = dot.style.height = `${5 + Math.random() * 10}px`; // Random size
-
-      container.appendChild(dot);
-    }
-  }, []);
-
   return (
     <div className="prize">
       <div className="prize-container">
@@ -43,18 +25,16 @@ const Prize = () => {
           </div>
         ))}
       </div>
-
+      
       <img src={Gdxr} alt="Gdxr" className="gdxr" />
       <div className="prize-1">
         <img src={Prizebg} alt="Prize Bg" />
       </div>
-
-      {/* Zombie with Floating Dots */}
-      <div className="zombie-container">
-        <img src={Zombie} alt="Zombie" className="zombie" />
-      </div>
+      
+      {/* New Zombie Image */}
+      <img src={Zombie} alt="Zombie" className="zombie" />
     </div>
   );
-};
+}
 
 export default Prize;

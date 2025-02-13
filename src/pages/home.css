@@ -35,7 +35,7 @@
 button {
   height: 4rem;
   width: 10rem;
-  background: linear-gradient(135deg, #000346, #8e9998); /* Gradient background */
+  background: linear-gradient(135deg, #DC2626, #783232); /* Gradient background */
   border: none;
   color: white;
   font-size: 2rem;
@@ -54,7 +54,7 @@ button:hover {
 }
 
 button:active {
-  transform: scale(2.98);
+  transform: scale(0.5);
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 

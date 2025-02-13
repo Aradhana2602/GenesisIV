@@ -1,4 +1,15 @@
+@font-face {
+    font-family: 'TheEvilWithin';
+    src: 
+        url('../assets/fonts/TheEvilWithin.woff2') format('woff2'),
+        url('../assets/fonts/TheEvilWithin.woff') format('woff'),
+        url('../assets/fonts/TheEvilWithin.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 .sponsors {
+    font-family: 'TheEvilWithin', sans-serif;
     background-color: #FBF2EB;
     background-size: cover;
     background-position: center;
@@ -8,28 +19,32 @@
     display: flex;
     margin-left: 10rem;
     flex-direction: column;
-    justify-content: center; /* Center content */
-    align-items: center; /* Center content horizontally */
+    justify-content: center;
+    align-items: center;
     padding: 2rem;
+    margin-left: 0;
 }
 
 .og {
     display: flex;
-    justify-content: space-between; /* Space between sponsors and OG section */
+    justify-content: space-between;
     align-items: center;
 }
 
 .sponsors h1 {
+    font-family: 'TheEvilWithin', sans-serif;
     font-size: 4rem;
     transition: color 0.3s ease, transform 0.3s ease;
-    font-weight: bold; /* Emphasize the heading */
-    text-transform: uppercase; /* Make it all caps */
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+   
 }
 
 .sponsors h1:hover {
     color: #df1f1f; 
     transform: scale(1.1);
-    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2); /* Add subtle shadow */
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
 }
 
 .sections {
@@ -42,18 +57,17 @@
 .sections h2 {
     font-size: 1.8rem;
     transition: color 0.3s ease, transform 0.3s ease;
-    text-transform: uppercase; /* Make section titles uppercase */
+    text-transform: uppercase;
     font-weight: 600;
-    letter-spacing: 1px; /* Add spacing for better readability */
+    letter-spacing: 1px;
 }
 
 .sections h2:hover {
     color: #ff5733;
-    transform: translateX(10px); 
+    transform: translateX(10px);
     text-shadow: 2px 2px 4px rgba(255, 87, 51, 0.3);
 }
 
-/* Additional Styling */
 .sections img {
     width: 150px;
     margin: 10px;
@@ -61,10 +75,9 @@
 }
 
 .sections img:hover {
-    transform: scale(1.1); /* Slight zoom on hover */
+    transform: scale(1.1);
 }
 
-/* OG Section Styling */
 .OG-section {
     position: relative;
     display: flex;
@@ -79,28 +92,25 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-right: 10rem;
+    margin-right: 5rem;
 }
 
-/* Rotating Wheel */
 .rotating-wheel {
     position: absolute;
-    width: 45rem;  /* Updated size */
-    height: 45rem; /* Updated size */
+    width: 45rem;
+    height: 45rem;
     animation: rotate 5s linear infinite;
-    z-index: 0; /* Keeps the wheel behind Ramu */
+    z-index: 0;
 }
 
-/* Ramu Image */
 .ramu-image {
     position: relative;
-    z-index: 1; /* Keeps Ramu above the rotating wheel */
-    width: 40rem;  /* Updated size */
-    height: 50rem; /* Updated size */
+    z-index: 1;
+    width: 40rem;
+    height: 50rem;
     object-fit: cover;
 }
 
-/* Rotation Animation */
 @keyframes rotate {
     from {
         transform: rotate(0deg);

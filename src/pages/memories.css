@@ -1,24 +1,40 @@
 .memories {
-    position: relative;
-    text-align: center;
-   
-  }
-  
-  
-  
-  .timeline {
-    font-size: 5rem;
-    font-weight: bold;
-    color: rgb(6, 6, 6);
-    text-align: left;
-    margin: auto;
-    width: 90%;
-    font-family: "Berlin Sans", sans-serif;
-  }
-  
-  .memories-img {
-    transform: scale(0.9);
-    max-width: 100%;
-    height: auto;
-  }
-  
+  background-image: url('../assets/Memoriesbg.jpg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  text-align: center;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+/* Center the h1 at the top */
+.memories h1 {
+  font-size: 4rem;
+  font-family: "Berlin Sans", sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 10px; /* Adjust spacing from top */
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.timeline {
+  font-weight: bold;
+  color: rgb(6, 6, 6);
+  width: 90%;
+  margin-top: 3rem;
+}
+
+/* Image styling */
+.memories-img {
+  transform: scale(0.9);
+  max-width: 100%;
+  height: auto;
+}

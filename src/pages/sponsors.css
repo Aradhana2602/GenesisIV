@@ -1,0 +1,157 @@
+.sponsors {
+    background-color: #FBF2EB;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    color: rgb(0, 0, 0);
+    display: flex;
+    margin-left: 10rem;
+    flex-direction: column;
+    justify-content: center; /* Center content */
+    align-items: center; /* Center content horizontally */
+    padding: 2rem;
+}
+
+.og {
+    display: flex;
+    justify-content: space-between; /* Space between sponsors and OG section */
+    align-items: center;
+}
+
+.sponsors h1 {
+    font-size: 4rem;
+    transition: color 0.3s ease, transform 0.3s ease;
+    font-weight: bold; /* Emphasize the heading */
+    text-transform: uppercase; /* Make it all caps */
+}
+
+.sponsors h1:hover {
+    color: #df1f1f; 
+    transform: scale(1.1);
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2); /* Add subtle shadow */
+}
+
+.sections {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+}
+
+.sections h2 {
+    font-size: 1.8rem;
+    transition: color 0.3s ease, transform 0.3s ease;
+    text-transform: uppercase; /* Make section titles uppercase */
+    font-weight: 600;
+    letter-spacing: 1px; /* Add spacing for better readability */
+}
+
+.sections h2:hover {
+    color: #ff5733;
+    transform: translateX(10px); 
+    text-shadow: 2px 2px 4px rgba(255, 87, 51, 0.3);
+}
+
+/* Additional Styling */
+.sections img {
+    width: 150px;
+    margin: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.sections img:hover {
+    transform: scale(1.1); /* Slight zoom on hover */
+}
+
+/* OG Section Styling */
+.OG-section {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 3rem;
+}
+
+.ramu-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10rem;
+}
+
+/* Rotating Wheel */
+.rotating-wheel {
+    position: absolute;
+    width: 45rem;  /* Updated size */
+    height: 45rem; /* Updated size */
+    animation: rotate 5s linear infinite;
+    z-index: 0; /* Keeps the wheel behind Ramu */
+}
+
+/* Ramu Image */
+.ramu-image {
+    position: relative;
+    z-index: 1; /* Keeps Ramu above the rotating wheel */
+    width: 40rem;  /* Updated size */
+    height: 50rem; /* Updated size */
+    object-fit: cover;
+}
+
+/* Rotation Animation */
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@media (max-width: 480px) {
+    .sponsors {
+        margin-left: 0;
+        padding-left: 5px;
+        height: 50vh;
+    }
+
+    .sponsors h1 {
+        margin-top: -10rem;
+        font-size: 2rem;
+        font-style: italic;
+    }
+    .sponsors h2 {
+        margin: 0;
+        font-size: 2rem;
+        letter-spacing: 0;
+        font-size: 1.3rem;
+    }
+
+    .sections {
+        gap: 0.5rem;
+        z-index: 4;
+        align-items: start;
+    }
+
+    .sections img {
+        margin: 5px;
+        width: 100px;
+    }
+
+    .OG-section {
+        margin-top: -10rem;
+        justify-content: center;
+    }
+
+    .rotating-wheel {
+        width: 25rem;
+        height: 25rem;
+    }
+
+    .ramu-image{
+        width: 20rem;
+        height: 25rem;
+    }
+}

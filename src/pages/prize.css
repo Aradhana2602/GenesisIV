@@ -1,0 +1,150 @@
+.prize {
+    font-family: 'TheEvilWithin', sans-serif;
+    position: relative;
+    display: flex;
+    justify-content: center; /* Center the prize elements */
+    
+}
+
+.prize-container {
+    position: absolute;
+    top: 15rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-left: -5rem;
+}
+
+.pool {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    gap: 0.5rem;
+    z-index: 9;
+}
+
+.pool h1 {
+    font-size: 8rem;
+}
+
+.lower {
+    display: flex;
+    font-size: 3rem;
+    color: #6D3001;
+    flex-direction: column;
+    align-items: center; /* Center the text */
+    justify-content: center;
+}
+
+.lower span:first-child {
+    font-size: 3rem;
+    vertical-align: super;
+}
+
+.prize-1 img {
+    height: 70rem;
+}
+
+.prize-1 {
+    position: relative;
+    z-index: 1;
+    left: 0;
+}
+
+.gdxr {
+    width: 10rem;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    z-index: 2;
+    animation: floatUpDown 1.5s infinite ease-in-out alternate;
+}
+
+@keyframes floatUpDown {
+    from {
+        transform: translateY(-170%);
+    }
+    to {
+        transform: translateY(-25%);
+    }
+}
+
+.zombie {
+    position: absolute;
+    right: 0;
+    bottom: 0; 
+    height: 55rem; 
+    z-index: 3;
+}
+
+.zombie-container {
+    position: absolute;
+    right: 5%;
+    bottom: 5%;
+    width: 15rem;
+    height: 15rem;
+}
+
+.zombie {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 55rem; 
+    z-index: 3;
+}
+
+@media (max-width: 480px) {
+    .prize {
+        padding: 1rem;
+        top: -10rem;
+        height: 80vh;
+    }
+
+    .prize-container {
+        top: 15rem;
+        margin: 0;
+    }
+
+    .pool h1 {
+        font-size: 2rem;
+    }
+
+    .prize-1 {
+        top: -15rem;
+    }
+
+    .gdxr {
+        width: 5rem;
+    }
+
+    .lower {
+        font-size: 1.5rem;
+    }
+
+    .lower span:first-child {
+        font-size: 1rem;
+        vertical-align: super;
+    }
+    .zombie {
+        height: 30vh;
+        position: absolute;
+        top: 55vh;
+    }
+
+    .prize-1 img {
+        width: 100%;
+        margin-left: 2rem;
+    }
+
+    @keyframes floatUpDown {
+        from {
+            transform: translateY(-180%);
+        }
+        to {
+            transform: translateY(-70%);
+        }
+    }
+}

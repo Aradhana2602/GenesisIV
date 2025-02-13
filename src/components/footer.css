@@ -1,0 +1,101 @@
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    color: white;
+    font-family: "BerlinSans";
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+.footer-spacing {
+    height: 1.75rem;
+}
+
+.footer-presented {
+    margin-bottom: 0.75rem;
+}
+
+/* GDXR with separators */
+.footer-gdxr-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.footer-separator {
+    height: 2px;
+    background-color: white;
+    flex-grow: 1;
+    max-width: 25%;
+}
+
+.footer-title {
+    font-size: 3rem;
+    font-weight: bold;
+    padding: 0 1rem;
+    white-space: nowrap;
+}
+
+/* Footer sections */
+.footer-section {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 2.5rem;
+}
+
+.footer-venue,
+.footer-follow-us,
+.footer-contact {
+    width: 33%;
+}
+
+.footer-underline {
+    font-size: 1.5rem;
+    text-decoration: underline;
+    margin-bottom: 1rem;
+}
+
+/* Icons */
+.footer-icons {
+    display: flex;
+    width: 40%;
+    font-size: 2rem;
+    margin: auto;
+    justify-content: space-evenly;
+}
+
+/* Clickable animations */
+.footer-clickable {
+    cursor: pointer;
+    width: fit-content;
+    margin: auto;
+    transition: transform 0.2s, color 0.2s;
+}
+
+.footer-clickable:hover,
+.footer-clickable:active {
+    transform: scale(1.5);
+    color: red;
+}
+
+@media (max-width: 480px) {
+    .footer-title {
+        font-size: 2rem;
+    }
+
+    .footer-section {
+        flex-direction: column;
+    }
+
+    .footer-venue,
+    .footer-follow-us,
+    .footer-contact {
+        width: 100%;
+    }
+
+    .footer-icons {
+        width: 70%;
+    }
+}

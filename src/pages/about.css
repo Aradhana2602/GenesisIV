@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100..700&display=swap');
+
+.main {
+    background-color: #FBF2EB;
+}
+
+@font-face {
+    font-family: 'TheEvilWithin';
+    src: url('../assets/fonts/TheEvilWithin.ttf') format('truetype'); /* Adjust path if needed */
+    font-weight: normal;
+    font-style: normal;
+}
+
+.para {
+    background-image: url('../assets/Aboutbg.svg');
+    font-family: 'TheEvilWithin', sans-serif;
+    background-size: cover;
+    background-position: center;
+    height: 142vh; /* Fixed the incorrect unit */
+    width: 100%;
+    color: rgb(204, 193, 193);
+    display: flex;
+}
+
+.about-img img {
+    margin-top: 10rem;
+    height: 55rem;
+}
+
+.about-para {
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 500;
+    margin-top: 15rem;
+    color: red;
+    
+}
+
+.about-para h3,h1{
+    font-size: 4rem;
+}
+
+@media screen and (max-width: 1000px) and (min-width: 701px) {
+    .about-para {
+        font-size: 1.3rem;
+    }
+}
+
+/* ❌ Hide image & adjust text for screens below 700px */
+@media screen and (max-width: 700px) {
+    .about-img {
+        display: none;
+    }
+
+    .about-para {
+        font-size: 1.2rem;
+        margin-top: 5rem;
+        padding: 1rem 1rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .para {
+        background-position: -10vw;
+        height: 100vh;
+    }
+
+    .about-para {
+        font-size: 1rem;
+        padding: 2rem 1rem;
+        justify-content: center;
+        margin-top: 105px;
+    }
+    
+    .about-para h3, .about-para h1 {
+        font-size: 2rem;
+        margin: 1rem 0;
+    }
+}

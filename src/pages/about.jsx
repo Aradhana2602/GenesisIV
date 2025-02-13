@@ -9,7 +9,7 @@ gsap.registerPlugin(ScrollTrigger);
 const About = () => {
   const aboutImgRef = useRef(null);
   const aboutSectionRef = useRef(null);
-
+  const aboutTextRef = useRef(null);
   useEffect(() => {
     gsap.fromTo(
       aboutImgRef.current,

@@ -6,14 +6,17 @@
   width: 100%;
 }
 
-.align{
+.align {
   display: flex;
+  flex-wrap: wrap; /* Ensure items wrap on smaller screens */
 }
+
 .genesis {
-  height:35rem;
+  height: 35rem;
   margin-top: -1rem;
   margin-left: 12rem;
 }
+
 .genesis img {
   height: 30rem; /* Maintain aspect ratio */
   max-width: 100%; /* Ensure responsiveness */
@@ -25,7 +28,7 @@
   margin-right: 25rem;
 }
 
-.register{
+.register {
   margin-top: -10rem;
   display: flex;
   flex-direction: column;
@@ -35,7 +38,7 @@
 button {
   height: 4rem;
   width: 10rem;
-  background: linear-gradient(135deg, #DC2626, #783232); /* Gradient background */
+  background: linear-gradient(135deg, #000346, #8e9998); /* Gradient background */
   border: none;
   color: white;
   font-size: 2rem;
@@ -54,7 +57,74 @@ button:hover {
 }
 
 button:active {
-  transform: scale(0.5);
+  transform: scale(0.98); /* Corrected scale value */
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
+@media (max-width: 1024px) {
+  .genesis {
+    margin-left: 6rem;
+  }
+
+  .bg img {
+    margin-right: 12rem;
+  }
+
+  button {
+    font-size: 1.5rem;
+    width: 8rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .genesis {
+    margin-left: 2rem;
+    height: auto;
+  }
+
+  .bg img {
+    margin-right: 0;
+    height: auto;
+  }
+
+  button {
+    font-size: 1.2rem;
+    width: 6rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .home {
+    background-position: 150vw 10vh; /* Adjust background position */
+  }
+  .genesis {
+    margin-left: 2rem;
+    margin-top: -5rem;
+    height: auto;
+    max-width: 80%;
+  }
+
+  .bg img {
+    height: auto;
+  }
+
+  button {
+    font-size: 1rem;
+    width: 7rem;
+    height: 3rem;
+  }
+
+  .timer {
+    font-size: 1.5rem;
+    width: 90vw;
+  }
+  
+  .align {
+    margin-top: 10vw;
+  }
+
+  .register {
+    margin-top: 5vh;
+    justify-content: center;
+  }
+}

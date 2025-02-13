@@ -8,7 +8,6 @@ gsap.registerPlugin(ScrollTrigger);
 
 const About = () => {
   const aboutImgRef = useRef(null);
-  const aboutTextRef = useRef(null);
   const aboutSectionRef = useRef(null);
 
   useEffect(() => {
@@ -47,7 +46,7 @@ const About = () => {
         <div className="about-img" ref={aboutImgRef}>
           <img src={AboutGuy} alt="About Guy" />
         </div>
-        <div className="about-para" ref={aboutTextRef}>
+        <div className="about-para">
           <h3>ABOUT</h3>
           <h1>GENESIS4</h1>
           <p>

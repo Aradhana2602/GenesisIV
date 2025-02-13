@@ -103,3 +103,36 @@ body, html {
       font-size: 1.1rem;
   }
 }
+
+@media (max-width: 480px) {
+  .navbar {
+    justify-content: end;
+  }
+
+  .main-navbar.active {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 5rem;
+    left: 0;
+    background-color: rgba(251, 242, 235, 0.9);
+    backdrop-filter: blur(8px);
+    padding: 1rem 3rem;
+    border-radius: 0 0 0.5rem 0.5rem;
+    gap: 1rem;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .main-navbar.active a {
+    font-size: 1.2rem;  
+  }
+
+  .main-navbar.active a:hover {
+    transform: scale(1.1);
+    color: black;
+  }
+
+  .hamburger-button {
+    margin-right: 2rem;
+  }
+}

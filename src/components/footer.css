@@ -79,3 +79,23 @@
     transform: scale(1.5);
     color: red;
 }
+
+@media (max-width: 480px) {
+    .footer-title {
+        font-size: 2rem;
+    }
+
+    .footer-section {
+        flex-direction: column;
+    }
+
+    .footer-venue,
+    .footer-follow-us,
+    .footer-contact {
+        width: 100%;
+    }
+
+    .footer-icons {
+        width: 70%;
+    }
+}

@@ -34,7 +34,7 @@ body, html {
 
 .main-navbar a:hover {
   transform: scale(1.1);
-  color: #b10808;
+  color: rgb(124, 14, 14);
 }
 
 .main-navbar a:active {

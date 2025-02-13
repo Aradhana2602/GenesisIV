@@ -13,19 +13,31 @@ const About = () => {
   useEffect(() => {
     gsap.fromTo(
       aboutImgRef.current,
-      { x: "-100%", opacity: 0 }, // Start off-screen (left)
+      { x: "-100%", opacity: 0 },
       {
-        x: "0%", 
-        opacity: 1, 
-        duration: 3, 
+        x: "0%",
+        opacity: 1,
+        duration: 3,
         ease: "power3.out",
         scrollTrigger: {
-          trigger: aboutSectionRef.current, // Start animation when "About" section enters viewport
-          start: "top 80%",  // When 80% of the section is in view
-          toggleActions: "play none none none", // Play once
+          trigger: aboutSectionRef.current,
+          start: "top 80%",
+          toggleActions: "play none none none",
         },
       }
     );
+
+    gsap.to(aboutTextRef.current, {
+      opacity: 1,
+      x: "0%",
+      duration: 1.5,
+      ease: "power3.out",
+      scrollTrigger: {
+        trigger: aboutTextRef.current,
+        start: "top 85%",
+        toggleActions: "play none none none",
+      },
+    });
   }, []);
 
   return (

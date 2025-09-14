@@ -13,6 +13,7 @@ User-Friendly Interface: Intuitive controls for an enhanced user experience.
 Technologies Used
 
 Frontend: HTML, CSS, JavaScript
+
 Build Tool: Vite
 
 Installation

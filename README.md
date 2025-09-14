@@ -1,5 +1,4 @@
 GenesisIV
-Overview
 
 GenesisIV is a web-based application designed to simulate and visualize the amplification process of a Free-Electron Laser (FEL). Leveraging modern web technologies, it provides an interactive platform for users to explore FEL dynamics in a 3D environment.
 

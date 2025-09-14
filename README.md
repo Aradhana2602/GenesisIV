@@ -1,6 +1,6 @@
-GenesisIV
+GenesisIV is the official Game Jam project hub organized by the AR-VR Club. 
 
-GenesisIV is a web-based application designed to simulate and visualize the amplification process of a Free-Electron Laser (FEL). Leveraging modern web technologies, it provides an interactive platform for users to explore FEL dynamics in a 3D environment.
+This React-based project serves as the starting point for participants to explore, prototype, and register their entries for Genesis IV. Build innovative AR/VR-inspired games, experiment with UI-driven mechanics, and submit your entry directly through this repository.
 
 Features
 
@@ -13,9 +13,6 @@ User-Friendly Interface: Intuitive controls for an enhanced user experience.
 Technologies Used
 
 Frontend: HTML, CSS, JavaScript
-
-3D Rendering: WebGL, Three.js
-
 Build Tool: Vite
 
 Installation
